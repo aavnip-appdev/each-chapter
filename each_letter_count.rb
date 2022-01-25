@@ -5,8 +5,6 @@
 
 p "Enter a word:"
 input_letters = gets.chomp.split("")
-p input_letters
-
 input_letters.each do |letter|
-  p letter
-end 
+  p letter + " appears " + input_letters.count(letter).to_s + " times"
+end
